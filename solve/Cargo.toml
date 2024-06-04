@@ -1,0 +1,12 @@
+[package]
+name = "solve"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ssh-key = { version = "0.6.6", features = ["ed25519"] }
+rand = "0.8.5"
+zeroize = "1.7.0"
+num_cpus = "1.16.0"

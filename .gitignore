@@ -1,0 +1,8 @@
+trash/
+MALICIOUS-xz/
+docker/
+flag.txt
+xz-safe.tar
+xz-challenge.tar
+*/.idea
+.idea

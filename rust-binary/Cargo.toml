@@ -1,0 +1,19 @@
+[package]
+name = "rust-binary"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# tokio = { version = "1", features = ["io-util", "fs", "macros", "rt"] }
+# futures = { version = "0.3", default-features = false, features = ["executor", "std"] }
+# async-compression = { version = "0.4.9", features = ["futures-io", "xz"] }
+# xz2 = "0.1"
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = "abort"
